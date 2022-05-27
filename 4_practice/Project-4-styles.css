@@ -55,9 +55,7 @@
   font-size: 0.4em;
   width: 35%;
   border: 1px solid crimson;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 50px;
+  margin: 15px 25px;
 }
 
 .column-2 {
@@ -65,9 +63,7 @@
   font-size: 0.4em;
   width: 35%;
   border: 1px solid crimson;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 50px;
+  margin: 15px 25px;
 }
 
 /* Свойства Футтера */
