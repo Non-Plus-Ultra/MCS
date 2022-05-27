@@ -43,6 +43,7 @@
   width: 15%;
   border: 1px solid crimson;
   position: fixed;
+  margin: 15px 25px;
 }
 
 .img-1 {
@@ -53,7 +54,7 @@
 .column-1{
   display: flex;
   font-size: 0.4em;
-  width: 35%;
+  width: 30%;
   border: 1px solid crimson;
   margin: 15px 25px;
 }
@@ -61,7 +62,7 @@
 .column-2 {
   display: flex;
   font-size: 0.4em;
-  width: 35%;
+  width: 30%;
   border: 1px solid crimson;
   margin: 15px 25px;
 }
