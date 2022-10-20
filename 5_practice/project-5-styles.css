@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    /* height: 1500px; */
+    font-size: 15px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a:link,
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #2701fc;
+    text-decoration: underline;
+  }
+
+  .header {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    position: fixed;
+    z-index: 1;
+    
+    background: linear-gradient(white, darkcyan);
+  }
+
+  .logo {
+    display: flex;
+    width: 7.5em;
+    height: 7.5em;
+  }
+
+  .menu {
+    width: 60%;
+    padding: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li {
+    list-style: none;
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+  }
+
+  .hero-block {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .wallpaper {
+    width: 100%;
+
+    margin: 100px auto 0 auto;
+    max-width: 100%;
+    text-align: left;
+    background-image: url("images/wallpaper-georgia.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container{
+    position: relative;
+    max-width: 1280px;
+    height: 260px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a.text:link, a.text:visited{
+    font-size: 4em;
+    text-align: center;
+    color: cyan;
+    
+    margin: 0;
+    position: absolute; 
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  a.text:hover{
+    font-size: 4em;
+    text-align: center;
+    color: #2701fc;
+    text-decoration: underline;
+    
+    margin: 0;
+    position: absolute; 
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .left{
+    position:relative;
+    display:none;
+    width:50%;
+    border:1px solid #000;
+  }
+    
+  .right{
+    position:relative;
+    display:none;
+    width:49%;
+    border:1px solid #000;
+  }
+
+  .text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.9em;
+    width: 70%;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    margin: 15px 15px;
+  }
+
+  .products {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 70%;
+    margin: 25px 15px;
+  }
+
+  .product {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .product-1-img {
+    height: 70%;
+  }
+
+  .product-2-img {
+    height: 80%;
+  }
+
+  .product-3-img {
+    height: 100%;
+  }
+
+  .product-4-img {
+    height: 200px;
+  }
+
+  .product-link {
+    margin: 5px;
+  }
+
+  .text-inside {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.9em;
+    width: 80%;
+    margin: 5px 5px;
+  }
+
+  .footer-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: darkcyan;
+  padding: 0.5em;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1.5em;
+  }
