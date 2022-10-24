@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: whitesmoke;
+  }
+  a:link,
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2701fc;
+    text-decoration: underline;
+  }
+  .header {
+    background-color: #0b24fb;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  }
+  .text {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+  }
+  .hero-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5em;
+    height: 8em;
+    border: 1px solid black;
+    border-width: 2px;
+    margin: 20px;
+  }
+
+  .footer {
+    background-color: #0b24fb;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Макет для iphone 12 Pro*/
+  @media only screen and (min-width: 0px) and (max-width: 390px) {
+    .block {
+      width: 90%; /* Блоки для iphone 12 Pro и устройств с шириной экрана < 390px */
+    }
+  }
+  /* Макет для десктопов */
+  @media only screen and (min-width: 391px) {
+    .block {
+      width: 40%; /* Блоки для устройств с шириной экрана > 390px */
+    }
+  }
