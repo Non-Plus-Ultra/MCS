@@ -69,15 +69,16 @@
   }
 
   /* Макет для iphone 12 Pro*/
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 800px) {
     .column {
       width: 90%; /* Блоки для iphone 12 Pro и устройств с шириной экрана < 500px */
     }
   }
   /* Макет для десктопов */
-  @media only screen and (min-width: 501px) and (max-width: 1200px) {
+  @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .column {
-      width: 90%; /* Блоки для устройств с шириной экрана > 500px и <800px*/
+      width: 40%; /* Блоки для устройств с шириной экрана > 500px и <800px*/
+      height: 500px;
     }
   }
   /* Макет для десктопов */
