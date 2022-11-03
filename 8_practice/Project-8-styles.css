@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  header {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+  }
+
+  .wallpaper {
+    width: 100%;
+
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    text-align: left;
+    background-image: url("images/Package.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    position: relative;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .left{
+    position:relative;
+    display:none;
+    width:50%;
+    border:1px solid #000;
+  }
+  
+  .right{
+    position:relative;
+    display:none;
+    width:49%;
+    border:1px solid #000;
+  }
+
+  a:link, a:visited {
+    text-align: center;
+    color: black;
+  }
+  a:hover {
+    text-align: center;
+    color: #2701fc;
+    text-decoration: underline;
+  }
+  .text-box {
+    display: flex;
+    justify-content: flex-start;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .text-header {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+  }
+  .text-section {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    padding: 10px;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    min-height: 80%;
+  }
+
+  .form-container {
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 800px;
+  }
+
+  .form-package {
+    position: relative;
+    background-color: pink;
+
+    border: solid 1px;
+    border-color: white;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .form-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: white;
+    margin: 3px;
+  }
+  .form-row label {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin: 3px;
+    padding: 2px;
+  }
+  .form-row input {
+    font-size: 15px;
+    color: white;
+    background-color: pink;
+    margin: 3px;
+    padding: 2px;
+
+    border: none;
+    border-bottom: solid 1px white;
+  }
+
+  .form-row ::placeholder {
+    font-size: 15px;
+    color: white;
+  }
+
+  .button-container {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 50%;
+      
+    color: #FFFFFF;
+    background-color: orange;
+  
+    border: solid 2px ;
+    border-radius: 10px;
+    border-color: white;
+  
+    padding: 10px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+
+  }
+
+  footer {
+    background-color: pink;
+    margin-top: auto;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text-footer {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+  }
