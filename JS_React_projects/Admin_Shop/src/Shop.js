@@ -20,11 +20,11 @@ export default function Shop() {
       document.title = "Товары отсутствуют";
     } else if (counter === 1) {
       document.title = `${counter} товар`;
-    } else if ((counter === 2)||(counter === 3)||(counter === 4)) {
+    } else if (counter === 2 || counter === 3 || counter === 4) {
       document.title = `${counter} товара`;
     } else {
       document.title = `${counter} товаров`;
-    };
+    }
   }, [counter]);
 
   function handleFormSubmit(event) {
@@ -37,7 +37,7 @@ export default function Shop() {
     setItems([...items, newGood]);
     setName("");
     setDesc("");
-    setCounter(prev => prev + 1);
+    setCounter((prev) => prev + 1);
   }
 
   function handleCancelClick(id) {
