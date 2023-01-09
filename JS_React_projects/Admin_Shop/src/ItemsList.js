@@ -4,12 +4,12 @@ import Item from "./Item.js";
 export default function ItemsList(props) {
   return (
     <>
-      <ul className="ui-list">
+      <ul>
         {props.items.map((item, id) => (
-          <li key={id} className="ui-item-list">
-            <Item info={item} />
+          <li key={id} className="m-5">
+            <Item info={item}/>
             <button
-              className="item-button"
+              class="px-1 py-1 border border-black rounded w-1/5 text-xs text-black"
               onClick={() => props.onCancelClick(item.id)}
             >
               Удалить
