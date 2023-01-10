@@ -9,23 +9,22 @@ export default function Shop() {
   );
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
-  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
   useEffect(() => {
-    if (counter === 0) {
+    if (items.length === 0) {
       document.title = "Товары отсутствуют";
-    } else if (counter === 1) {
-      document.title = `${counter} товар`;
-    } else if (counter === 2 || counter === 3 || counter === 4) {
-      document.title = `${counter} товара`;
+    } else if (items.length === 1) {
+      document.title = `${items.length} товар`;
+    } else if (items.length === 2 || items.length === 3 || items.length === 4) {
+      document.title = `${items.length} товара`;
     } else {
-      document.title = `${counter} товаров`;
+      document.title = `${items.length} товаров`;
     }
-  }, [counter]);
+  }, [items]);
 
   function handleFormSubmit(event) {
     event.preventDefault();
@@ -37,7 +36,6 @@ export default function Shop() {
     setItems([...items, newGood]);
     setName("");
     setDesc("");
-    setCounter((prev) => prev + 1);
   }
 
   function handleCancelClick(id) {
@@ -55,7 +53,7 @@ export default function Shop() {
       />
       {items.length === 0 && (
         <div>
-          <p className="ui-title">{"Добавьте первый товар"}</p>
+          <p class="m-5">{"Добавьте первый товар"}</p>
         </div>
       )}
       <ItemsList items={items} onCancelClick={handleCancelClick} />

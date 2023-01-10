@@ -25,7 +25,7 @@ export default function AddItems(props) {
             </div>
             <div className="form-footer">
                 {((props.name === "" && props.desc !== "") || (props.name !== "" && props.desc === "")) && (
-                    <div className="validation">Заполните все поля!</div>
+                    <div class="m-5">Заполните все поля!</div>
                 )}
                 <input
                     type="submit"
