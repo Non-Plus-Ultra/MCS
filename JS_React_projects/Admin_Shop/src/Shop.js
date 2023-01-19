@@ -26,7 +26,7 @@ export default function Shop() {
     }
   }, [items]);
 
-  function handleFormSubmit(event) {
+  async function handleFormSubmit(event) {
     event.preventDefault();
     const newGood = {
       id: uuid(),
@@ -36,6 +36,20 @@ export default function Shop() {
     setItems([...items, newGood]);
     setName("");
     setDesc("");
+
+    try {
+      const response = await fetch("https://learn.guidedao.xyz/api/student/products", {
+        method: "POST",
+        headers: {"Content-type": "application/json"},
+        body: {
+          name: name,
+          desc: desc
+        }
+      })
+      const data = await response.json()
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   function handleCancelClick(id) {
