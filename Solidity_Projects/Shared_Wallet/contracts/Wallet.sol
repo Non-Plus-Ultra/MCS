@@ -8,7 +8,7 @@ contract Wallet is SharedWallet {
     event MoneyWithdrawn (address indexed _to, uint _amount);
     event MoneyReceived (address indexed _from, uint _amount);
 
-    //function to check balance
+    //function to check balance 
     function getBalance() public view returns(uint) {
         return address(this).balance;
     }
